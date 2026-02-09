@@ -1,5 +1,5 @@
 import os
-path = r"C:\Users\maxim\Desktop\Stage Recherche L3\ScrollView\images"
+path = r"C:\Users\maxim\Documents\GitHub\neurobitweb.github.io\images"
 files = os.listdir(path)
 
 for index, file in enumerate(files):

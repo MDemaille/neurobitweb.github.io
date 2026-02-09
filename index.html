@@ -57,15 +57,15 @@ function DisplayPictures()
                 imageIndexes.splice(_indexToRemove, 1); // 2nd parameter means remove one item only
             }
 
-            path = "./images/"+_currentIndexDisplayed.toString()+".bmp";
-            result += '<img src=' + path + ' alt = "Beret" width="1280" height="960" loading = "lazy">\n <br /><br /><br /><br /><br />'; 
+            path = "./images/"+_currentIndexDisplayed.toString()+".jpg";
+            result += '<img src=' + path + ' alt = "img" width="1280" height="960" loading = "lazy">\n <br /><br /><br /><br /><br />'; 
 
             totalIndex++;
             if(Math.random()<videoProbability)
             { 
 
                 //ObserverLazyLoading
-                result += '<div id="lazy_container'+observerIndex.toString()+'"><img id="placeholder_image'+observerIndex.toString()+'" src="./images/1.bmp" fetchpriority="high" /> </div><br /><br /><br /><br /><br />' 
+                result += '<div id="lazy_container'+observerIndex.toString()+'"><img id="placeholder_image'+observerIndex.toString()+'" src="./images/1.jpg" fetchpriority="high" /> </div><br /><br /><br /><br /><br />' 
 
                 //Classic Loading
                 //result += '<video controls preload="none" width="1280" height="960" autoplay muted><source src="./videos/1.mp4" type="video/mp4"></video> '
